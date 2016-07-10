@@ -1,0 +1,27 @@
+.park-space {
+	margin-bottom: 20px;
+	.park-id {
+		font-size: 70px;
+		text-align: center;
+		line-height: 1.8em;
+	}
+	.confirm {
+		font-size: 14px;
+		color: #444;
+		text-align: center;
+	}
+}
+
+.park-change {
+	.confirm {
+		margin: 25px 0 10px;
+		text-align: center;
+		font-size: 14px;
+		color: #333;
+	}
+}
+
+.loading {
+	margin: 150px 0;
+	text-align: center;
+}

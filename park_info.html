@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="myapp" ng-controller="appCtrl">
+<head>
+	<meta charset="UTF-8">
+	<title>沼写真館駐車場</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/into.css">
+</head>
+<body>
+	
+	<div class="container">
+
+		<ng-include src="'./views/header.html'"></ng-include>
+
+		<main class="main-area">
+
+			<h1>- 沼写真館駐車場 -</h1>
+
+			
+
+			<div class="park-change">
+				<p class="confirm">▼ ポイント確認など</p>
+				<button class="btn btn-primary btn-block" onclick="location.href = './qrcode.html'">マイページへ</button>
+			</div>
+
+		</main>
+
+		<ng-include src="'./views/footer.html'"></ng-include>
+
+	</div>
+
+	<script src="./js/angular.min.js"></script>
+	<script src="./controller/common.js"></script>
+
+</body>
+</html>
