@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="myapp" ng-controller="appCtrl">
+<head>
+	<meta charset="UTF-8">
+	<title>入庫確認</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/into.css">
+</head>
+<body>
+	
+	<div class="container">
+
+		<ng-include src="'./views/header.html'"></ng-include>
+
+		<main class="main-area">
+
+			<h1>- 入庫する -</h1>
+			
+			<div class="park-space">
+				<div class="park-id">沼-01</div>
+				<p class="confirm">まちがいありませんか？</p>
+			</div>
+
+			<button class="btn btn-active btn-large btn-block btn-bold" onclick="location.href = './load_into.html'">入庫する</button>
+
+			<div class="park-change">
+				<p class="confirm">ここではありませんか？</p>
+				<button class="btn btn-info btn-block" onclick="location.href = './qrcode.html'">やりなおす</button>
+			</div>
+
+		</main>
+
+		<ng-include src="'./views/footer.html'"></ng-include>
+
+	</div>
+
+	<script src="./js/angular.min.js"></script>
+	<script src="./controller/common.js"></script>
+
+</body>
+</html>

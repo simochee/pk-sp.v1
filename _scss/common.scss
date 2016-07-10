@@ -1,0 +1,33 @@
+@import "compass";
+@import "compass/reset";
+
+body {
+	background: #333;
+}
+
+.container {
+	overflow: hidden;
+	width: 320px;
+	margin: 0 auto;
+	background: #fff;
+	@media (max-width: 500px) {
+		width: 100%;
+	}
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+h1 {
+	margin: 8px 0 10px;
+	font-size: 16px;
+	text-align: center;
+	color: #666;
+}
+
+@import "btns";
+@import "parts";

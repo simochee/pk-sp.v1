@@ -1,0 +1,200 @@
+/* line 5, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../_scss/common.scss */
+body {
+  background: #333;
+}
+
+/* line 8, ../_scss/common.scss */
+.container {
+  overflow: hidden;
+  width: 320px;
+  margin: 0 auto;
+  background: #fff;
+}
+@media (max-width: 500px) {
+  /* line 8, ../_scss/common.scss */
+  .container {
+    width: 100%;
+  }
+}
+
+/* line 18, ../_scss/common.scss */
+.left {
+  float: left;
+}
+
+/* line 21, ../_scss/common.scss */
+.right {
+  float: right;
+}
+
+/* line 25, ../_scss/common.scss */
+h1 {
+  margin: 8px 0 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+}
+
+/* line 1, ../_scss/_btns.scss */
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 3px auto 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  background: #eee;
+  border-radius: 5px;
+  box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+/* line 12, ../_scss/_btns.scss */
+.btn:active {
+  top: 3px;
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.6);
+}
+/* line 16, ../_scss/_btns.scss */
+.btn.btn-block {
+  display: block;
+  width: 90%;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 24, ../_scss/_btns.scss */
+.btn.btn-bold {
+  border-width: 2px;
+}
+/* line 27, ../_scss/_btns.scss */
+.btn.btn-large {
+  padding: 20px;
+  font-size: 25px;
+}
+/* line 35, ../_scss/_btns.scss */
+.btn.btn-primary {
+  border-color: #19fdb7;
+  background-color: #60fecd;
+}
+/* line 38, ../_scss/_btns.scss */
+.btn.btn-active {
+  border-color: #ff5252;
+  background-color: #ff9999;
+}
+/* line 41, ../_scss/_btns.scss */
+.btn.btn-info {
+  border-color: #00bcd4;
+  background-color: #1ce5ff;
+}
+
+/* line 1, ../_scss/_parts.scss */
+.global-header {
+  overflow: hidden;
+  padding: 5px 4px;
+}
+/* line 4, ../_scss/_parts.scss */
+.global-header .user-name,
+.global-header .user-id {
+  text-align: right;
+}
+/* line 8, ../_scss/_parts.scss */
+.global-header .user-name {
+  line-height: 1.4em;
+  font-size: 13px;
+  color: #222;
+}
+/* line 12, ../_scss/_parts.scss */
+.global-header .user-name .name {
+  margin: 0 2px;
+  font-size: 15px;
+  color: #111;
+}
+/* line 18, ../_scss/_parts.scss */
+.global-header .user-id {
+  font-size: 12px;
+  color: #444;
+}
+/* line 21, ../_scss/_parts.scss */
+.global-header .user-id .number {
+  font-size: 14px;
+  color: #222;
+}
+
+/* line 28, ../_scss/_parts.scss */
+.global-footer {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  background: #ccc;
+  font-size: 14px;
+  color: #777;
+  line-height: 500px;
+  text-align: center;
+}
+/* line 37, ../_scss/_parts.scss */
+.global-footer::before {
+  content: "Footer Area";
+}

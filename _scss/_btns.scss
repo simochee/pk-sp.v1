@@ -1,0 +1,47 @@
+.btn {
+	position: relative;
+	display: inline-block;
+	margin: 3px auto 8px;
+	padding: 8px 10px;
+	font-size: 14px;
+	border: 1px solid #bbb;
+	background: #eee;
+	border-radius: 5px;
+	box-shadow: 0 4px 3px -2px rgba(#000, 0.3);
+	cursor: pointer;
+	&:active {
+		top: 3px;
+		box-shadow: 0 1px 2px -2px rgba(#000, 0.6);
+	}
+	&.btn-block {
+		display: block;
+		width: 90%;
+		padding: {
+			left: 0;
+			right: 0;
+		}
+	}
+	&.btn-bold {
+		border-width: 2px;
+	}
+	&.btn-large {
+		padding: 20px;
+		font-size: 25px;
+	}
+	@mixin btn-theme($c) {
+		border-color: $c;
+		background-color: lighten($c, 14%);
+	}
+	&.btn-primary {
+		@include btn-theme(#19fdb7);
+	}
+	&.btn-active {
+		@include btn-theme(#ff5252);
+	}
+	&.btn-info {
+		@include btn-theme(#00bcd4);
+	}
+	&.btn-warn {
+
+	}
+}
